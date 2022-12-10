@@ -1,0 +1,14 @@
+{
+  "version": 2,
+  "builds": [
+    {
+      "src": "package.json",
+      "use": "@vercel/npm"
+    },
+    {
+      "src": "storybook-static/**/*",
+      "dest": "/storybook/$1",
+      "type": "static"
+    }
+  ]
+}
